@@ -22,6 +22,9 @@
 		79EF7E7B1B270016000107E2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E721B26FDAE000107E2 /* Bolts.framework */; };
 		79EF7E7C1B270016000107E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E731B26FDAE000107E2 /* FBSDKCoreKit.framework */; };
 		79EF7E7D1B270016000107E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E741B26FDAE000107E2 /* FBSDKLoginKit.framework */; };
+		79EF7E7E1B27182C000107E2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E721B26FDAE000107E2 /* Bolts.framework */; };
+		79EF7E7F1B27182C000107E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E731B26FDAE000107E2 /* FBSDKCoreKit.framework */; };
+		79EF7E801B27182C000107E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E741B26FDAE000107E2 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79EF7E691B26FBAF000107E2 /* FBFramework.framework in Frameworks */,
+				79EF7E7E1B27182C000107E2 /* Bolts.framework in Frameworks */,
+				79EF7E7F1B27182C000107E2 /* FBSDKCoreKit.framework in Frameworks */,
+				79EF7E801B27182C000107E2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +573,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = FBFrameworkClientApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -577,6 +587,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = FBFrameworkClientApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
