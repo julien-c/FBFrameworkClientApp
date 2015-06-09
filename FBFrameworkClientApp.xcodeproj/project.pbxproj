@@ -18,6 +18,10 @@
 		79EF7E661B26FBAF000107E2 /* FBFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF7E651B26FBAF000107E2 /* FBFrameworkTests.swift */; };
 		79EF7E691B26FBAF000107E2 /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */; };
 		79EF7E6A1B26FBAF000107E2 /* FBFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79EF7E7A1B26FE69000107E2 /* FrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF7E791B26FE69000107E2 /* FrameworkViewController.swift */; };
+		79EF7E7B1B270016000107E2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E721B26FDAE000107E2 /* Bolts.framework */; };
+		79EF7E7C1B270016000107E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E731B26FDAE000107E2 /* FBSDKCoreKit.framework */; };
+		79EF7E7D1B270016000107E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E741B26FDAE000107E2 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,10 @@
 		79EF7E5C1B26FBAF000107E2 /* FBFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EF7E641B26FBAF000107E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79EF7E651B26FBAF000107E2 /* FBFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFrameworkTests.swift; sourceTree = "<group>"; };
+		79EF7E721B26FDAE000107E2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		79EF7E731B26FDAE000107E2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		79EF7E741B26FDAE000107E2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		79EF7E791B26FE69000107E2 /* FrameworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EF7E7B1B270016000107E2 /* Bolts.framework in Frameworks */,
+				79EF7E7C1B270016000107E2 /* FBSDKCoreKit.framework in Frameworks */,
+				79EF7E7D1B270016000107E2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,11 +132,12 @@
 		79EF7E1F1B26FAFD000107E2 = {
 			isa = PBXGroup;
 			children = (
-				79EF7E2A1B26FAFD000107E2 /* FBFrameworkClientApp */,
-				79EF7E401B26FAFD000107E2 /* FBFrameworkClientAppTests */,
 				79EF7E531B26FBAF000107E2 /* FBFramework */,
 				79EF7E621B26FBAF000107E2 /* FBFrameworkTests */,
+				79EF7E2A1B26FAFD000107E2 /* FBFrameworkClientApp */,
+				79EF7E401B26FAFD000107E2 /* FBFrameworkClientAppTests */,
 				79EF7E291B26FAFD000107E2 /* Products */,
+				79EF7E781B26FDB9000107E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				79EF7E561B26FBAF000107E2 /* FBFramework.h */,
+				79EF7E791B26FE69000107E2 /* FrameworkViewController.swift */,
 				79EF7E541B26FBAF000107E2 /* Supporting Files */,
 			);
 			path = FBFramework;
@@ -210,6 +223,16 @@
 				79EF7E641B26FBAF000107E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79EF7E781B26FDB9000107E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79EF7E721B26FDAE000107E2 /* Bolts.framework */,
+				79EF7E731B26FDAE000107E2 /* FBSDKCoreKit.framework */,
+				79EF7E741B26FDAE000107E2 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,10 +361,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */,
-				79EF7E3C1B26FAFD000107E2 /* FBFrameworkClientAppTests */,
 				79EF7E511B26FBAF000107E2 /* FBFramework */,
 				79EF7E5B1B26FBAF000107E2 /* FBFrameworkTests */,
+				79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */,
+				79EF7E3C1B26FAFD000107E2 /* FBFrameworkClientAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EF7E7A1B26FE69000107E2 /* FrameworkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,11 +620,17 @@
 		79EF7E6C1B26FBAF000107E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/Documents/FacebookSDK",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -610,6 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -619,11 +650,17 @@
 		79EF7E6D1B26FBAF000107E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = FBFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
