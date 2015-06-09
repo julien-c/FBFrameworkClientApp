@@ -13,6 +13,11 @@
 		79E15B2E1B2751E500A3C581 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E15B2D1B2751E500A3C581 /* Images.xcassets */; };
 		79E15B311B2751E500A3C581 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E15B2F1B2751E500A3C581 /* LaunchScreen.xib */; };
 		79E15B3D1B2751E500A3C581 /* ClientAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E15B3C1B2751E500A3C581 /* ClientAppTests.swift */; };
+		79E15B6C1B2752DD00A3C581 /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E15B6B1B2752DD00A3C581 /* FBFramework.framework */; };
+		79E15B6D1B2752DD00A3C581 /* FBFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79E15B6B1B2752DD00A3C581 /* FBFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79E15B721B27532000A3C581 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E15B6F1B27532000A3C581 /* Bolts.framework */; };
+		79E15B731B27532000A3C581 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E15B701B27532000A3C581 /* FBSDKCoreKit.framework */; };
+		79E15B741B27532000A3C581 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E15B711B27532000A3C581 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		79E15B6E1B2752DD00A3C581 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79E15B6D1B2752DD00A3C581 /* FBFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		79E15B211B2751E500A3C581 /* ClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E15B251B2751E500A3C581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +55,10 @@
 		79E15B361B2751E500A3C581 /* ClientAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E15B3B1B2751E500A3C581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79E15B3C1B2751E500A3C581 /* ClientAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAppTests.swift; sourceTree = "<group>"; };
+		79E15B6B1B2752DD00A3C581 /* FBFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBFramework.framework; path = ../FBFramework.framework; sourceTree = "<group>"; };
+		79E15B6F1B27532000A3C581 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		79E15B701B27532000A3C581 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		79E15B711B27532000A3C581 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E15B6C1B2752DD00A3C581 /* FBFramework.framework in Frameworks */,
+				79E15B721B27532000A3C581 /* Bolts.framework in Frameworks */,
+				79E15B731B27532000A3C581 /* FBSDKCoreKit.framework in Frameworks */,
+				79E15B741B27532000A3C581 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +86,10 @@
 		79E15B181B2751E500A3C581 = {
 			isa = PBXGroup;
 			children = (
+				79E15B6F1B27532000A3C581 /* Bolts.framework */,
+				79E15B701B27532000A3C581 /* FBSDKCoreKit.framework */,
+				79E15B711B27532000A3C581 /* FBSDKLoginKit.framework */,
+				79E15B6B1B2752DD00A3C581 /* FBFramework.framework */,
 				79E15B231B2751E500A3C581 /* ClientApp */,
 				79E15B391B2751E500A3C581 /* ClientAppTests */,
 				79E15B221B2751E500A3C581 /* Products */,
@@ -122,6 +153,7 @@
 				79E15B1D1B2751E500A3C581 /* Sources */,
 				79E15B1E1B2751E500A3C581 /* Frameworks */,
 				79E15B1F1B2751E500A3C581 /* Resources */,
+				79E15B6E1B2752DD00A3C581 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = ClientApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +387,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					..,
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = ClientApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +451,7 @@
 				79E15B421B2751E500A3C581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79E15B431B2751E500A3C581 /* Build configuration list for PBXNativeTarget "ClientAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +460,7 @@
 				79E15B451B2751E500A3C581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
