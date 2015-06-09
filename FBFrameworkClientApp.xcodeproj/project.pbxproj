@@ -13,6 +13,11 @@
 		79EF7E351B26FAFD000107E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EF7E341B26FAFD000107E2 /* Images.xcassets */; };
 		79EF7E381B26FAFD000107E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EF7E361B26FAFD000107E2 /* LaunchScreen.xib */; };
 		79EF7E441B26FAFD000107E2 /* FBFrameworkClientAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF7E431B26FAFD000107E2 /* FBFrameworkClientAppTests.swift */; };
+		79EF7E571B26FBAF000107E2 /* FBFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79EF7E561B26FBAF000107E2 /* FBFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79EF7E5D1B26FBAF000107E2 /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */; };
+		79EF7E661B26FBAF000107E2 /* FBFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF7E651B26FBAF000107E2 /* FBFrameworkTests.swift */; };
+		79EF7E691B26FBAF000107E2 /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */; };
+		79EF7E6A1B26FBAF000107E2 /* FBFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,42 @@
 			remoteGlobalIDString = 79EF7E271B26FAFD000107E2;
 			remoteInfo = FBFrameworkClientApp;
 		};
+		79EF7E5E1B26FBAF000107E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EF7E201B26FAFD000107E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79EF7E511B26FBAF000107E2;
+			remoteInfo = FBFramework;
+		};
+		79EF7E601B26FBAF000107E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EF7E201B26FAFD000107E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79EF7E271B26FAFD000107E2;
+			remoteInfo = FBFrameworkClientApp;
+		};
+		79EF7E671B26FBAF000107E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EF7E201B26FAFD000107E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79EF7E511B26FBAF000107E2;
+			remoteInfo = FBFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79EF7E6E1B26FBAF000107E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79EF7E6A1B26FBAF000107E2 /* FBFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79EF7E281B26FAFD000107E2 /* FBFrameworkClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBFrameworkClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +76,12 @@
 		79EF7E3D1B26FAFD000107E2 /* FBFrameworkClientAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBFrameworkClientAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EF7E421B26FAFD000107E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79EF7E431B26FAFD000107E2 /* FBFrameworkClientAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFrameworkClientAppTests.swift; sourceTree = "<group>"; };
+		79EF7E521B26FBAF000107E2 /* FBFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EF7E551B26FBAF000107E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79EF7E561B26FBAF000107E2 /* FBFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBFramework.h; sourceTree = "<group>"; };
+		79EF7E5C1B26FBAF000107E2 /* FBFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EF7E641B26FBAF000107E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79EF7E651B26FBAF000107E2 /* FBFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFrameworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EF7E691B26FBAF000107E2 /* FBFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +97,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EF7E4E1B26FBAF000107E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EF7E591B26FBAF000107E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EF7E5D1B26FBAF000107E2 /* FBFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +123,8 @@
 			children = (
 				79EF7E2A1B26FAFD000107E2 /* FBFrameworkClientApp */,
 				79EF7E401B26FAFD000107E2 /* FBFrameworkClientAppTests */,
+				79EF7E531B26FBAF000107E2 /* FBFramework */,
+				79EF7E621B26FBAF000107E2 /* FBFrameworkTests */,
 				79EF7E291B26FAFD000107E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +134,8 @@
 			children = (
 				79EF7E281B26FAFD000107E2 /* FBFrameworkClientApp.app */,
 				79EF7E3D1B26FAFD000107E2 /* FBFrameworkClientAppTests.xctest */,
+				79EF7E521B26FBAF000107E2 /* FBFramework.framework */,
+				79EF7E5C1B26FBAF000107E2 /* FBFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +178,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		79EF7E531B26FBAF000107E2 /* FBFramework */ = {
+			isa = PBXGroup;
+			children = (
+				79EF7E561B26FBAF000107E2 /* FBFramework.h */,
+				79EF7E541B26FBAF000107E2 /* Supporting Files */,
+			);
+			path = FBFramework;
+			sourceTree = "<group>";
+		};
+		79EF7E541B26FBAF000107E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79EF7E551B26FBAF000107E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79EF7E621B26FBAF000107E2 /* FBFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				79EF7E651B26FBAF000107E2 /* FBFrameworkTests.swift */,
+				79EF7E631B26FBAF000107E2 /* Supporting Files */,
+			);
+			path = FBFrameworkTests;
+			sourceTree = "<group>";
+		};
+		79EF7E631B26FBAF000107E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79EF7E641B26FBAF000107E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		79EF7E4F1B26FBAF000107E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EF7E571B26FBAF000107E2 /* FBFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */ = {
@@ -122,10 +233,12 @@
 				79EF7E241B26FAFD000107E2 /* Sources */,
 				79EF7E251B26FAFD000107E2 /* Frameworks */,
 				79EF7E261B26FAFD000107E2 /* Resources */,
+				79EF7E6E1B26FBAF000107E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				79EF7E681B26FBAF000107E2 /* PBXTargetDependency */,
 			);
 			name = FBFrameworkClientApp;
 			productName = FBFrameworkClientApp;
@@ -150,6 +263,43 @@
 			productReference = 79EF7E3D1B26FAFD000107E2 /* FBFrameworkClientAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		79EF7E511B26FBAF000107E2 /* FBFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79EF7E6B1B26FBAF000107E2 /* Build configuration list for PBXNativeTarget "FBFramework" */;
+			buildPhases = (
+				79EF7E4D1B26FBAF000107E2 /* Sources */,
+				79EF7E4E1B26FBAF000107E2 /* Frameworks */,
+				79EF7E4F1B26FBAF000107E2 /* Headers */,
+				79EF7E501B26FBAF000107E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBFramework;
+			productName = FBFramework;
+			productReference = 79EF7E521B26FBAF000107E2 /* FBFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79EF7E5B1B26FBAF000107E2 /* FBFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79EF7E6F1B26FBAF000107E2 /* Build configuration list for PBXNativeTarget "FBFrameworkTests" */;
+			buildPhases = (
+				79EF7E581B26FBAF000107E2 /* Sources */,
+				79EF7E591B26FBAF000107E2 /* Frameworks */,
+				79EF7E5A1B26FBAF000107E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79EF7E5F1B26FBAF000107E2 /* PBXTargetDependency */,
+				79EF7E611B26FBAF000107E2 /* PBXTargetDependency */,
+			);
+			name = FBFrameworkTests;
+			productName = FBFrameworkTests;
+			productReference = 79EF7E5C1B26FBAF000107E2 /* FBFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +313,13 @@
 						CreatedOnToolsVersion = 6.3.2;
 					};
 					79EF7E3C1B26FAFD000107E2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 79EF7E271B26FAFD000107E2;
+					};
+					79EF7E511B26FBAF000107E2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					79EF7E5B1B26FBAF000107E2 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 79EF7E271B26FAFD000107E2;
 					};
@@ -183,6 +340,8 @@
 			targets = (
 				79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */,
 				79EF7E3C1B26FAFD000107E2 /* FBFrameworkClientAppTests */,
+				79EF7E511B26FBAF000107E2 /* FBFramework */,
+				79EF7E5B1B26FBAF000107E2 /* FBFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +358,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		79EF7E3B1B26FAFD000107E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EF7E501B26FBAF000107E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EF7E5A1B26FBAF000107E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +398,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79EF7E4D1B26FBAF000107E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EF7E581B26FBAF000107E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EF7E661B26FBAF000107E2 /* FBFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +420,21 @@
 			isa = PBXTargetDependency;
 			target = 79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */;
 			targetProxy = 79EF7E3E1B26FAFD000107E2 /* PBXContainerItemProxy */;
+		};
+		79EF7E5F1B26FBAF000107E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79EF7E511B26FBAF000107E2 /* FBFramework */;
+			targetProxy = 79EF7E5E1B26FBAF000107E2 /* PBXContainerItemProxy */;
+		};
+		79EF7E611B26FBAF000107E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79EF7E271B26FAFD000107E2 /* FBFrameworkClientApp */;
+			targetProxy = 79EF7E601B26FBAF000107E2 /* PBXContainerItemProxy */;
+		};
+		79EF7E681B26FBAF000107E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79EF7E511B26FBAF000107E2 /* FBFramework */;
+			targetProxy = 79EF7E671B26FBAF000107E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +593,80 @@
 			};
 			name = Release;
 		};
+		79EF7E6C1B26FBAF000107E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79EF7E6D1B26FBAF000107E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FBFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79EF7E701B26FBAF000107E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBFrameworkClientApp.app/FBFrameworkClientApp";
+			};
+			name = Debug;
+		};
+		79EF7E711B26FBAF000107E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBFrameworkClientApp.app/FBFrameworkClientApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +692,22 @@
 			buildConfigurations = (
 				79EF7E4B1B26FAFD000107E2 /* Debug */,
 				79EF7E4C1B26FAFD000107E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79EF7E6B1B26FBAF000107E2 /* Build configuration list for PBXNativeTarget "FBFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79EF7E6C1B26FBAF000107E2 /* Debug */,
+				79EF7E6D1B26FBAF000107E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79EF7E6F1B26FBAF000107E2 /* Build configuration list for PBXNativeTarget "FBFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79EF7E701B26FBAF000107E2 /* Debug */,
+				79EF7E711B26FBAF000107E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
