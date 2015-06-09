@@ -1,0 +1,10 @@
+framework module FBFramework {
+  umbrella header "FBFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module FBFramework.Swift {
+    header "FBFramework-Swift.h"
+}
